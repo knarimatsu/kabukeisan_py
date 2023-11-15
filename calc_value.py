@@ -28,11 +28,11 @@ for i in range(int(holding_period)):
     ) ** i
 
 values = {
-    "成長なし": int(normal_value + buy_price / (1 + interest) ** holding_period),
-    "成長あり": int(low_growth_value + buy_price / (1 + interest) ** holding_period),
-    "7%": int(middle_growth_value + buy_price / (1 + interest) ** holding_period),
-    "10%": int(high_growth_value + buy_price / (1 + interest) ** holding_period),
-    "15%": int(extra_high_growth_value + buy_price / (1 + interest) ** holding_period),
+    "成長なし": int(normal_value),
+    "成長あり": int(low_growth_value),
+    "7%": int(middle_growth_value),
+    "10%": int(high_growth_value),
+    "15%": int(extra_high_growth_value),
 }
 
 print("{}年後の企業価値は{values}です".format(holding_period, values=values))
