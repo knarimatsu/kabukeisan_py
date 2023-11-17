@@ -8,14 +8,7 @@ flow = profit + depriciation - investing
 
 value = 0
 
-for i in range(1, 31):
-    terminal = 0
+for i in range(1, 14500):
     value += flow / (1 + interest) ** i
-    terminal = (flow / interest) / (1 + interest) ** i
-    # print(int(round(value, 0)), int(round(terminal, 0)))
-    print(
-        "{}年後のキャッシュフローの現在価値:{}".format(
-            i,
-            int(round(value, 0)),
-        )
-    )
+
+print(int(round(value, 0)))
